@@ -15,12 +15,12 @@ describe('check cookies', () => {
     cy.get(home.cookieBannerDenyBtn).should('contain.text', 'Deny');
   });
 
-  it.only('allow cookies must contain "fs-cc" cookie with true values', () => {
+  it('allow cookies must contain "fs-cc" cookie with true values', () => {
     cy.get(home.cookieBannerAcceptBtn).click();
     cy.getCookie('fs-cc').its('value').should('contain', acceptCookie);
   });
 
-  it.only('deny cookies must contain "fs-cc" cookie with false values', () => {
+  it('deny cookies must contain "fs-cc" cookie with false values', () => {
     cy.get(home.cookieBannerDenyBtn).click();
     cy.getCookie('fs-cc').its('value').should('contain', denyCookie);
     cy.getCookie('fs-cc-updated').its('value').should('eq', 'true');
