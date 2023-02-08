@@ -33,6 +33,10 @@ Scenarios:
 
 In order to check if every element is on the right place, with right colors. This does not check any feature. Just the layout.
 
+### Home accessibility check
+
+In order to verify the accessibility compliance.
+
 ## Running the project
 
 To run this project, you can choose the 3 ways below, from easier to harder:
