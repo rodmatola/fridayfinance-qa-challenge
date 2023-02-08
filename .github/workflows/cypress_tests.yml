@@ -32,9 +32,11 @@ jobs:
         run: npm test
 
       - name: Zip Cypress videos
+        if: always()
         run: zip -r cypress_videos.zip cypress/videos/
 
       - name: Upload test videos
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: cypress_videos
