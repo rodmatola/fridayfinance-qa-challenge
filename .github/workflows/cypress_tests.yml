@@ -1,0 +1,42 @@
+name: Friday Finance Cypress tests
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  cypress_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set Node version
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Verify Cypress
+        run: npx cypress verify
+
+      - name: Run Cypress tests
+        run: npm test
+
+      - name: Zip Cypress videos
+        run: zip -r cypress_videos.zip cypress/videos/
+
+      - name: Upload test videos
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress_videos
+          path: cypress_videos.zip
+          retention-days: 15

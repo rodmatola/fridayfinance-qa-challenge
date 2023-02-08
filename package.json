@@ -1,0 +1,27 @@
+{
+  "name": "friday-finance-qa-challenge",
+  "version": "0.1.0",
+  "description": "Friday Finance QA Cypress challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodmatola/fridayfinance-qa-challenge.git"
+  },
+  "keywords": [
+    "cypress",
+    "friday finance"
+  ],
+  "author": "Rodrigo Matola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodmatola/fridayfinance-qa-challenge/issues"
+  },
+  "homepage": "https://github.com/rodmatola/fridayfinance-qa-challenge#readme",
+  "devDependencies": {
+    "cypress": "^12.5.1",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}
