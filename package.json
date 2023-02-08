@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/rodmatola/fridayfinance-qa-challenge#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "cypress": "^12.5.1",
     "eslint-plugin-cypress": "^2.12.1"
   }

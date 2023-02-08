@@ -2,10 +2,6 @@
 
 This document contains some notes, questions and suggestions I had during my testing sections. There is no order and I choose to only explain them in text, not putting any graphical evidence.
 
-## Login button isn't a button
-
-Login button isn't a button element, but a link "dressed" like a button. This can be considered as accessibility bug.
-
 ## Hint of what a strong password is not explicit
 
 In the sign up flow, at the "Create a password" a password screen, is asked to user create a strong password, but the hint is a tiny red circle with an exclamation point inside. No clue that I have to put the mouse over the icon to have a hint. Also, the hint is done in parts, for example, if I type just letters, the hint will be `Please provide at least one number`. If I add a number, the hint will be `Please provide at least one special character`.
