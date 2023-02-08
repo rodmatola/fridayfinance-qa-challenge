@@ -44,8 +44,59 @@ To run this project, you can choose the 3 ways below, from easier to harder:
 
 ### GitHub Actions
 
+This is the easiest way because you can run the project basically with only one click.
+
+1. Go to the Actions tab
+1. Click on `Friday Finance Cypress tests` on the left menu
+1. Click on `Run workflow` button on the right in the blue bar
+1. Click on the `Run workflow` green button.
+
+After the workflow finishes, an zip file will be generated containing the Cypress run videos. You can download it at the button of the chosen run.
+
 ### GitHub Codespaces
 
 ### Devcontainer in VS Code
 
 ### Locally in your machine
+
+Prerequisites:
+
+- NodeJS, preferentially installed through a node version manage, like [nvm](https://github.com/nvm-sh/nvm) or [n](https://github.com/tj/n)
+
+If you already have NodeJS installed via nvm, type
+
+```sh
+nvm use
+```
+
+to install the NodeJS version used in this repository (v18.14.0). Having other NodeJS version should not be a problem.
+
+To install dependencies, type
+
+```sh
+npm i
+```
+
+### Running in headless mode
+
+For run in headless mode, just type
+
+```sh
+npm test
+```
+
+The run videos will be stored in `cypress/videos` folder (default folder)
+
+### Running in interactive mode
+
+First, you need to open Cypress by typing
+
+```sh
+npx cypress open
+```
+
+then
+
+1. Choose E2E Tests
+1. Select a browser and click on `Start E2E testing in [selected browser] (tested with Chrome and Electron)
+1. Click on the play button to run all specs, or select one spec to run from the table.

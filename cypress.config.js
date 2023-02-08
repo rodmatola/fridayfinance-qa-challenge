@@ -4,6 +4,7 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://www.fridayfinance.com',
     chromeWebSecurity: false,
+    experimentalRunAllSpecs: true,
     hideXHRInCommandLog: true,
     scrollBehavior: 'center',
     viewportHeight: 1080,
