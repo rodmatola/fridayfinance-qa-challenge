@@ -11,7 +11,18 @@ module.exports = defineConfig({
     viewportWidth: 1920,
     watchForFileChanges: false,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      on('task', {
+        log(message) {
+          console.log(message);
+
+          return null;
+        },
+        table(message) {
+          console.table(message);
+
+          return null;
+        },
+      });
     },
   },
 });

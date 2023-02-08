@@ -1,10 +1,12 @@
+import { terminalLog } from '../support/functions/terminalLog';
+
 describe('home a11y test', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.injectAxe();
   });
 
-  it.only('checks general accessibility', () => {
-    cy.checkA11y();
+  it('checks general accessibility', () => {
+    cy.checkA11y(null, null, terminalLog);
   });
 });

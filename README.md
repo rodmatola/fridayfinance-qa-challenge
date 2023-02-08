@@ -35,7 +35,7 @@ In order to check if every element is on the right place, with right colors. Thi
 
 ### Home accessibility check
 
-In order to verify the accessibility compliance.
+In order to verify the accessibility compliance. This check uses [cypress-axe](https://github.com/component-driven/cypress-axe) plugin.
 
 ## Running the project
 
