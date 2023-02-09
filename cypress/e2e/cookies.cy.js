@@ -8,6 +8,7 @@ describe('check cookies', () => {
 
   it('banner must be visible and contains a link to Privacy Police and Accept and Deny buttons', () => {
     cy.get(home.cookieBanner).should('be.visible');
+    cy.percySnapshot();
     cy.get(home.cookieBannerText)
       .find('a')
       .should('have.attr', 'href', '/privacy-policy');
