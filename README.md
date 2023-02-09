@@ -111,3 +111,7 @@ then
 1. Choose E2E Tests
 1. Select a browser and click on `Start E2E testing in [selected browser] (tested with Chrome and Electron)
 1. Click on the play button to run all specs, or select one spec to run from the table.
+
+## Issues
+
+Some issues found on website during exploratory tests were registered on this [repository issues tab](https://github.com/rodmatola/fridayfinance-qa-challenge/issues)
