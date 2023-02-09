@@ -1,0 +1,12 @@
+{
+  "name": "GitHub automated scripts",
+  "dockerFile": "../Dockerfile",
+  "containerEnv": {
+    "PERCY_TOKEN": "${localEnv:PERCY_TOKEN}"
+  },
+  "extensions": [
+    "vscode-icons-team.vscode-icons",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint"
+  ]
+}

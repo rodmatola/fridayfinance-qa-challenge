@@ -48,7 +48,25 @@ After the workflow finishes, an zip file will be generated containing the Cypres
 
 ### GitHub Codespaces
 
+When you click the `<> Code` button on GitHub do clone the project, you will see the `Codespaces` tab. Click on it. Then choose `Create a Codespace on main`.
+
+Everything needed to run this project will be installed and a web version of VS Code will be open. Just type, in terminal
+
+```sh
+npm test
+```
+
 ### Devcontainer in VS Code
+
+**ATTENTION**: you MUST have docker installed to run this way
+
+In VS Code, at the bottom left corner, you will see a green icon with these signs `><`. Click on it then choose `Reopen in container` and wait the process end.
+
+Everything needed to run this project will be installed and VS Code will be open inside a Docker container. Just type, in terminal
+
+```sh
+npm test
+```
 
 ### Locally in your machine
 
@@ -93,3 +111,7 @@ then
 1. Choose E2E Tests
 1. Select a browser and click on `Start E2E testing in [selected browser] (tested with Chrome and Electron)
 1. Click on the play button to run all specs, or select one spec to run from the table.
+
+## Issues
+
+Some issues found on website during exploratory tests were registered on this [repository issues tab](https://github.com/rodmatola/fridayfinance-qa-challenge/issues)
