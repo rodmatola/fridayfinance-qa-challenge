@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands';
 import 'cypress-axe';
+import '@percy/cypress';
 
 // Hide fetch/XHR requests from command log
 if (Cypress.config('hideXHRInCommandLog')) {
