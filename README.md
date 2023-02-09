@@ -13,25 +13,14 @@ In order to comply to GDPR we must show a banner asking user consent to store co
 1. User accept cookies: verify whether and what cookies are stored
 1. User deny cookies: no cookie should be stored
 
-### Sign up with email
-
-A new user must be registered without any problems. A user that have problems signing up, can never come back.
-
-Scenarios:
-For this feature, only an successful flow will be automated.
-
-### Login flow
-
-A registered user must have no problems to login in the system. In case there is an unexpected problem, the user must be notified.
-
-Scenarios:
-
-1. Successful login: the must reach the home page
-1. Error logging in: the user must receive a notification
-
 ### Home visual regression
 
 In order to check if every element is on the right place, with right colors. This does not check any feature. Just the layout.
+
+This check uses cypress-percy
+
+You can join Percy using this link: <https://accounts.browserstack.com/jointeam/bd5feede86f322464cece0f4659d662d>
+The link is valid till 2023-02-24 15:09:12 UTC
 
 ### Home accessibility check
 
