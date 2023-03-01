@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/rodmatola/fridayfinance-qa-challenge#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.4.2",
+    "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.2",
     "@percy/cli": "^1.18.0",
     "@percy/cypress": "^3.1.2",
